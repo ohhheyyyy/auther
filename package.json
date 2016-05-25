@@ -1,0 +1,26 @@
+{
+  "name": "auther",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon --watch server",
+    "preinstall": "bower install",
+    "seed": "node seed",
+    "db-init": "./db-init.sh",
+    "postinstall": "npm run db-init"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "pg": "^4.5.5",
+    "sequelize": "^3.23.1"
+  },
+  "devDependencies": {
+    "chance": "^0.8.0",
+    "nodemon": "^1.7.1"
+  }
+}
